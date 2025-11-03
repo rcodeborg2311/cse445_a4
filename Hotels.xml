@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
-
   <Hotel Rating="4.2">
     <Name>Westin Tempe</Name>
     <Phone>480-968-8885</Phone>
@@ -94,8 +93,6 @@
     </Address>
   </Hotel>
 
-  <!-- This hotel intentionally has NO Rating attribute
-       to satisfy "optional attribute: provide it for some hotels, but not for all". :contentReference[oaicite:16]{index=16} -->
   <Hotel>
     <Name>AC Hotel Phoenix Tempe / Downtown</Name>
     <Phone>480-642-6140</Phone>
@@ -109,7 +106,6 @@
     </Address>
   </Hotel>
 
-  <!-- Another hotel with NO Rating -->
   <Hotel>
     <Name>Hilton Phoenix Airport</Name>
     <Phone>480-894-1600</Phone>
@@ -136,5 +132,4 @@
       <NearestAirport>Sky Harbor</NearestAirport>
     </Address>
   </Hotel>
-
 </Hotels>
