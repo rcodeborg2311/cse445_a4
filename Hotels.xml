@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotels>
+
+  <Hotel Rating="4.2">
+    <Name>Westin Tempe</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address>
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.4">
+    <Name>Tempe Mission Palms Hotel</Name>
+    <Phone>480-894-1400</Phone>
+    <Address>
+      <Number>60</Number>
+      <Street>E 5th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.0">
+    <Name>Hyatt Regency Phoenix</Name>
+    <Phone>602-252-1234</Phone>
+    <Address>
+      <Number>122</Number>
+      <Street>N 2nd St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.1">
+    <Name>Hilton Garden Inn Phoenix Downtown</Name>
+    <Phone>602-343-0006</Phone>
+    <Address>
+      <Number>15</Number>
+      <Street>E Monroe St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.6">
+    <Name>Kimpton Hotel Palomar Phoenix</Name>
+    <Phone>602-253-6633</Phone>
+    <Phone>877-488-1908</Phone>
+    <Address>
+      <Number>2</Number>
+      <Street>E Jefferson St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.3">
+    <Name>Courtyard by Marriott Scottsdale Old Town</Name>
+    <Phone>480-429-7785</Phone>
+    <Address>
+      <Number>3311</Number>
+      <Street>N Scottsdale Rd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85251</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.5">
+    <Name>Hyatt Place Tempe / Phoenix Airport</Name>
+    <Phone>480-804-9544</Phone>
+    <Address>
+      <Number>1413</Number>
+      <Street>W Rio Salado Pkwy</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <!-- This hotel intentionally has NO Rating attribute
+       to satisfy "optional attribute: provide it for some hotels, but not for all". :contentReference[oaicite:16]{index=16} -->
+  <Hotel>
+    <Name>AC Hotel Phoenix Tempe / Downtown</Name>
+    <Phone>480-642-6140</Phone>
+    <Address>
+      <Number>100</Number>
+      <Street>E Rio Salado Pkwy</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <!-- Another hotel with NO Rating -->
+  <Hotel>
+    <Name>Hilton Phoenix Airport</Name>
+    <Phone>480-894-1600</Phone>
+    <Phone>800-445-8667</Phone>
+    <Address>
+      <Number>2435</Number>
+      <Street>S 47th St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85034</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.1">
+    <Name>Graduate Tempe</Name>
+    <Phone>480-967-9431</Phone>
+    <Address>
+      <Number>225</Number>
+      <Street>E Apache Blvd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+</Hotels>

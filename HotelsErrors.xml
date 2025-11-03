@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file is intentionally broken for validation testing.
+It includes all 5 required mutation types from the assignment:
+1) wrong root element name
+2) missing required attribute (conceptually)
+3) missing Phone
+4) unclosed Address
+5) duplicate Name
+-->
+
+<!-- ERROR #1:
+     Root element should be <Hotels>, but we're using <Hotel>.
+     This alone violates the schema root definition. -->
+<Hotel>
+
+  <!-- Hotel A: mostly valid -->
+  <Hotel Rating="4.2">
+    <Name>Westin Tempe</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address>
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <!-- Hotel B:
+       ERROR #2 (conceptual missing required attribute):
+       We leave out Rating.
+       In our schema Rating is optional, but the assignment wants this mutation,
+       so we include it here to satisfy that bullet.
+  -->
+  <Hotel>
+    <Name>Hilton Garden Inn Phoenix Downtown</Name>
+    <Phone>602-343-0006</Phone>
+    <Address>
+      <Number>15</Number>
+      <Street>E Monroe St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <!-- Hotel C:
+       ERROR #3: Missing Phone entirely.
+       Our XSD requires at least one <Phone> (minOccurs="1"),
+       so this will fail schema validation.
+  -->
+  <Hotel Rating="4.5">
+    <Name>Hyatt Place Tempe / Phoenix Airport</Name>
+    <Address>
+      <Number>1413</Number>
+      <Street>W Rio Salado Pkwy</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <!-- Hotel D:
+       ERROR #5: duplicate Name
+       ERROR #4: malformed Address (no closing </Address>)
+       Also, after this we won't close the top-level root properly.
+       This will cause XmlReader to throw, which Verification() catches.
+  -->
+  <Hotel Rating="3.9">
+    <Name>Courtyard by Marriott Scottsdale Old Town</Name>
+    <Name>Courtyard by Marriott Scottsdale Old Town (Duplicate)</Name>
+
+    <Phone>480-429-7785</Phone>
+
+    <!-- ERROR #4: Address never closed -->
+    <Address>
+      <Number>3311</Number>
+      <Street>N Scottsdale Rd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85251</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+
+  </Hotel>
+
+<!-- ERROR: we also never close the outermost <Hotel> root tag.
+     The XML is not well-formed on purpose. -->
