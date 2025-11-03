@@ -7,8 +7,8 @@
         <xs:element name="Hotel" maxOccurs="unbounded" minOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Name" type="xs:string" />
-              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded" minOccurs="1" />
+              <xs:element name="Name" type="xs:string"/>
+              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded" minOccurs="1"/>
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
